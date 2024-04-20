@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  #todo-list {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .task-complete {
+    text-decoration: line-through;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+<h1>To-Do List App</h1>
+<div id="todo-list">
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button onclick="addTask()">Add Task</button>
+  <ul id="tasks"></ul>
+</div>
+
+<script>
+// Function to add a new task
+function addTask() {
+  var taskInput = document.getElementById("taskInput");
+  var taskText = taskInput.value.trim();
+
+  if (taskText !== "") {
+    var tasksList = document.getElementById("tasks");
+    var taskItem = document.createElement("li");
+    taskItem.textContent = taskText;
+    taskItem.onclick = toggleTaskComplete; // Toggle task completion on click
+    tasksList.appendChild(taskItem);
+    taskInput.value = "";
+  } else {
+    alert("Please enter a valid task!");
+  }
+}
+
+// Function to toggle task completion
+function toggleTaskComplete() {
+  this.classList.toggle("task-complete");
+}
+</script>
+</body>
+</html>
