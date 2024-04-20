@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="style.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="context-flex-space">
+        <div class="logo">
+            <img style="width: 50px;height: 50px;" src="Images/Hotel-Image.png" alt="">
+
+        </div>
+        <div class="navlinks">
+            <ul id="menulist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </li>
+                <li><button class="primary-btn">BOOK NOW</button></li>
+            </ul>
+            <span class="fas fa-bars" onclick="menutoggle()"></span>
+        </div>
+    </div>
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh"
+            }
+            else {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="Images/Hotel-image-2.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holidays Here</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis consectetur,
+                            accusamus itaque eveniet excepturi ab asperiores sit corporis obcaecati optio beatae aut
+                            pariatur dolores tempore maxime enim minus saepe.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            <button class="secondary-btn">Contact Us</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Hotel-image-1.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holidays Here</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis consectetur,
+                            accusamus itaque eveniet excepturi ab asperiores sit corporis obcaecati optio beatae aut
+                            pariatur dolores tempore maxime enim minus saepe.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            <button class="secondary-btn">Contact Us</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Hotel-image-3.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holidays Here</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis consectetur,
+                            accusamus itaque eveniet excepturi ab asperiores sit corporis obcaecati optio beatae aut
+                            pariatur dolores tempore maxime enim minus saepe.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            <button class="secondary-btn">Contact Us</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Hotel-image-4.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holidays Here</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis consectetur,
+                            accusamus itaque eveniet excepturi ab asperiores sit corporis obcaecati optio beatae aut
+                            pariatur dolores tempore maxime enim minus saepe.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            <button class="secondary-btn">Contact Us</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Hotel-image-6.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holidays Here</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis consectetur,
+                            accusamus itaque eveniet excepturi ab asperiores sit corporis obcaecati optio beatae aut
+                            pariatur dolores tempore maxime enim minus saepe.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            <button class="secondary-btn">Contact Us</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <section class="book">
+        <div class="container flex-space">
+            <div class="text">
+                <h1><span>Book</span> Your Rooms </h1>
+            </div>
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Araival Date">
+                    <input type="date" placeholder="Departure Date">
+                    <input type="number" placeholder="Adults">
+                    <input type="number" placeholder="Childern">
+                    <input type="submit" value="CHECK AVAILABILITY">
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>WELCOME</h1>
+                    <h2>Crowny Hotel</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illo ab molestias fugiat perferendis
+                    consequuntur non deserunt aliquam dolor perspiciatis, voluptas similique tenetur doloribus unde
+                    aspernatur eum illum deleniti quibusdam eveniet amet, iste neque voluptate! Dolorum sint itaque,
+                    earum optio facilis tempora esse voluptates dolorem, quisquam aliquam porro, amet quod est?
+                    Inventore, error minima itaque perspiciatis vel impedit nihil possimus ipsam deserunt voluptatum
+                    quam nam. Quia nesciunt incidunt, dolorum quas ullam et at optio! Distinctio tenetur tempore rem?
+                    Magni quidem in quae vero. Eius aliquam sit, alias amet odio sint non officiis laborum consectetur
+                    soluta, ipsa repudiandae hic ullam fugit!</p>
+                <button class="primary-btn">ABOUT</button>
+            </div>
+            <div class="right">
+                <img style="width: 300px; height: 300px;" src="Images/Hotel-image-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>2500</h1>
+                <hr>
+                <span>Customer</span>
+            </div>
+            <div class="box">
+                <h1>1250</h1>
+                <hr>
+                <span>Happy Customer</span>
+            </div>
+            <div class="box">
+                <h1>150</h1>
+                <hr>
+                <span>Expert Technicians</span>
+            </div>
+            <div class="box">
+                <h1>3550</h1>
+                <hr>
+                <span>Desktop Reaired</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="container top">
+            <div class="heading">
+                <h1>EXPOLRE</h1>
+                <h2>Our Rooms</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consectetur,
+                    nobis ea aliquam doloremque soluta velit dignissimos repudiandae labore ratione? <br>Totam
+                    voluptates
+                    nam nisi sit consectetur aliquid itaque distinctio voluptatem.</p>
+            </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="Images/Hotel-image-4.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Niranta Transit Hotel Mumbai Airport-At Arrivals</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW </button>
+                                <h3>$250 <span><br>Per night</span>
+
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="Images/Hotel-image-2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Ashburn Court London</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW </button>
+                                <h3>$250 <span><br>Per night</span>
+
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="Images/Hotel-image-5.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p></p>
+                            <p>Ashburn Court London</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW </button>
+                                <h3>$250 <span><br>Per night</span>
+
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="Images/Hotel-image-2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Niranta Transit Hotel Mumbai Airport-At Arrivals</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW </button>
+                                <h3>$250 <span><br>Per night</span>
+
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="Images/Hotel-image-2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Niranta Transit Hotel Mumbai Airport-At Arrivals</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW </button>
+                                <h3>$250 <span><br>Per night</span>
+
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="Images/Hotel-image-4.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Niranta Transit Hotel Mumbai Airport-At Arrivals</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW </button>
+                                <h3>$250 <span><br>Per night</span>
+
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 10,
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <!--Gallery section starts here-->
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+                <h1>PHOTOS</h1>
+                <h2>Our Gallary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam adipisci sequi, officia
+                    doloremque sapiente porro, quo aut nostrum esse delectus deleniti!
+                    Culpa blanditiis aliquid magni vero, doloremque placeat autem!</p>
+            </div>
+        </div>
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="img">
+                        <img src="Images/Hotel-image-3.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fas fa-plus"></span>
+                        <h3>Photo Title Here </h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="Images/Hotel-image-1.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fas fa-plus"></span>
+                        <h3>Photo Title Here </h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="Images/Hotel-image-2.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fas fa-plus"></span>
+                        <h3>Photo Title Here </h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="Images/Hotel-image-4.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fas fa-plus"></span>
+                        <h3>Photo Title Here </h3>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="img">
+                        <img src="Images/Hotel-image-5.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fas fa-plus"></span>
+                        <h3>Photo Title Here </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 4,
+
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h1>SERVICES</h1>
+                <h2>Our services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam adipisci sequi, officia
+                    doloremque sapiente porro, quo aut nostrum esse delectus deleniti!
+                    Culpa blanditiis aliquid magni vero, doloremque placeat autem!</p>
+            </div>
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <h3>Delious Food</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fas fa-walking"></i>
+                            <h3>Fintness</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fas fa-hamburger"></i>
+                            <h3>Inhouse Restaurant</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-spa"></i>
+                            <h3>Beauty spa</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="Customer">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis voluptatem facere sit
+                        perspiciatis perferendis, maiores nostrum deserunt natus! Suscipit quod ratione, aspernatur rem
+                        fugiat neque iste dicta animi quasi nulla? Doloremque iste perspiciatis numquam deserunt.
+                        Pariatur fuga officia asperiores natus porro tenetur? Suscipit natus veniam sint reiciendis,
+                        soluta facilis facere, ab voluptatibus ducimus laborum, dignissimos id quae ut hic? Asperiores,
+                        dignissimos veritatis odit omnis ea natus quisquam unde autem quos inventore, vero iure illum
+                        iusto voluptas libero voluptatibus eaque soluta laudantium voluptates hic cupiditate veniam
+                        ullam! Quasi corporis perspiciatis nisi incidunt nihil officia tempore maxime at minus pariatur?
+                        Quae?</p>
+                    <h3>Julia Robertson</h3>
+                    <label>Julia Robertson</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis voluptatem facere sit
+                        perspiciatis perferendis, maiores nostrum deserunt natus! Suscipit quod ratione, aspernatur rem
+                        fugiat neque iste dicta animi quasi nulla? Doloremque iste perspiciatis numquam deserunt.
+                        Pariatur fuga officia asperiores natus porro tenetur? Suscipit natus veniam sint reiciendis,
+                        soluta facilis facere, ab voluptatibus ducimus laborum, dignissimos id quae ut hic? Asperiores,
+                        dignissimos veritatis odit omnis ea natus quisquam unde autem quos inventore, vero iure illum
+                        iusto voluptas libero voluptatibus eaque soluta laudantium voluptates hic cupiditate veniam
+                        ullam! Quasi corporis perspiciatis nisi incidunt nihil officia tempore maxime at minus pariatur?
+                        Quae?</p>
+                    <h3>Julia Robertson</h3>
+                    <label>Julia Robertson</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis voluptatem facere sit
+                        perspiciatis perferendis, maiores nostrum deserunt natus! Suscipit quod ratione, aspernatur rem
+                        fugiat neque iste dicta animi quasi nulla? Doloremque iste perspiciatis numquam deserunt.
+                        Pariatur fuga officia asperiores natus porro tenetur? Suscipit natus veniam sint reiciendis,
+                        soluta facilis facere, ab voluptatibus ducimus laborum, dignissimos id quae ut hic? Asperiores,
+                        dignissimos veritatis odit omnis ea natus quisquam unde autem quos inventore, vero iure illum
+                        iusto voluptas libero voluptatibus eaque soluta laudantium voluptates hic cupiditate veniam
+                        ullam! Quasi corporis perspiciatis nisi incidunt nihil officia tempore maxime at minus pariatur?
+                        Quae?</p>
+                    <h3>Julia Robertson</h3>
+                    <label>Julia Robertson</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis voluptatem facere sit
+                        perspiciatis perferendis, maiores nostrum deserunt natus! Suscipit quod ratione, aspernatur rem
+                        fugiat neque iste dicta animi quasi nulla? Doloremque iste perspiciatis numquam deserunt.
+                        Pariatur fuga officia asperiores natus porro tenetur? Suscipit natus veniam sint reiciendis,
+                        soluta facilis facere, ab voluptatibus ducimus laborum, dignissimos id quae ut hic? Asperiores,
+                        dignissimos veritatis odit omnis ea natus quisquam unde autem quos inventore, vero iure illum
+                        iusto voluptas libero voluptatibus eaque soluta laudantium voluptates hic cupiditate veniam
+                        ullam! Quasi corporis perspiciatis nisi incidunt nihil officia tempore maxime at minus pariatur?
+                        Quae?</p>
+                    <h3>Julia Robertson</h3>
+                    <label>Julia Robertson</label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 4,
+
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <div style="width: 100%; height: 50px ;">
+       
+    </div>
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate quos cumque odio eaque saepe eos excepturi cupiditate tempora in atque, iste repellendus numquam sit nesciunt, eius autem voluptatem quaerat.</p>
+                <div class="icon">
+                    <i class="fas fa-facebook"></i>
+                    <i class="fas fa-instagram"></i>
+                    <i class="fas fa-twitter"></i>
+                    <i class=""></i>
+                </div>
+
+            </div>
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <li>Company History</li>
+                    <li>About Us</li>
+                    <li>Contact us</li>
+                    <li>services</li>
+                    <li>privacy policy</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Contact us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quasi ipsa! Sit harum ea illum nam aliquid, dolores odio cumque repellendus amet quia praesentium porro, voluptatibus nemo veniam repudiandae iste!</p>
+                <i class="fas fa-location"></i>
+                <label for="">1201 park street , dhaka</label><br>
+                <i class="fas fa-phone"></i>
+                <label for="">[88] 932 892 922</label><br>
+                <i class="fas fa envelope"></i>
+                <label for="">info@denter.com</label><br>
+            </div>
+        </div>
+    </footer>
+    <div class="legal">
+        <p class="container">copyright (c) 2024 copyright holder all rights reserved</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

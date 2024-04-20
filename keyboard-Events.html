@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        button{
+            width: 50px;
+            height: 280px;
+            background-color: rgb(251, 242, 242);
+            
+            color: rgb(7, 7, 7);
+            text-align: center;
+            margin-right: 8px;
+            
+            
+
+        }
+        body{
+            background-color: rgb(213, 237, 248);
+        }
+        #mainDiv {
+            width: 900px;
+            height: 300px;
+            position: absolute;
+            top: 250px;
+            
+           
+        }
+        .small{
+            font-size: 10px;
+            width: 50px;
+            height: 280px;
+
+
+        }
+        .big{
+            font-size: 15px;
+            width: 55px;
+            height: 285px;
+            border: 5px solid rgb(163, 161, 158);
+            
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!--Sound Effects-->
+    <audio src="./Asound.wav" id="Asound"></audio>
+    <audio src="./Dsound.wav" id="Dsound"></audio>
+    <audio src="./Fsound.wav" id="Fsound"></audio>
+    <audio src="./Gsound.wav" id="Gsound"></audio>
+    <audio src="./Ssound.wav" id="Ssound"></audio>
+    <audio src="./Jsound.wav" id="Jsound"></audio>
+    <audio src="./Ksound.wav" id="Ksound"></audio>
+    <audio src="./Lsound.wav" id="Lsound"></audio>
+    <audio src="./Q.wav" id="Qsound"></audio>
+    <audio src="./W.wav" id="Wsound"></audio>
+    <audio src="./E.wav" id="Esound"></audio>
+    <audio src="./R.wav" id="Rsound"></audio>
+    <audio src="./T.wav" id="Tsound"></audio>
+
+    <!--Main div code -->
+    <div id="mainDiv">
+        <button type="submit" name="Q" id="Q" value="Q" >Q</button>
+        <button type="submit" name="W" id="W" value="W" >W</button>
+        <button type="submit" name="E" id="E" value="E"  >E</button>
+        <button type="submit" name="T" id="T" value="T" >T</button>
+        <button type="submit" name="A" id="A" value="A" >A</button>
+        <button type="submit" name="S" id="S" value="S" >S</button>
+        <button type="submit" name="D" id="D" value="D" >D</button>
+        <button type="submit" name="F" id="F" value="F">F</button>
+        <button type="submit" name="G" id="G" value="G" >G</button>
+        <button type="submit" name="J" id="J" value="J" >J</button>
+        <button type="submit" name="K" id="K" value="K" >K</button>
+        <button type="submit" name="L" id="L" value="L">L</button>
+        
+    </div>
+    <!--A S D F G H J K L-->
+    <script>
+    
+    var Aaudio=document.getElementById('Asound');
+    var Saudio=document.getElementById('Ssound');
+    var Daudio=document.getElementById('Dsound');
+    var Faudio=document.getElementById('Fsound');
+    var Gaudio=document.getElementById('Gsound');
+    var Jaudio=document.getElementById('Jsound');
+    var Kaudio=document.getElementById('Ksound');
+    var Laudio=document.getElementById('Lsound');
+    var Qaudio=document.getElementById('Qsound');
+    var Waudio=document.getElementById('Wsound');
+    var Eaudio=document.getElementById('Esound');
+    var Raudio=document.getElementById('Rsound');
+    var Taudio=document.getElementById('Tsound');
+
+    var Q=document.getElementById('Q')
+    var W=document.getElementById('W')
+    var E=document.getElementById('E')
+    var T=document.getElementById('T')
+    var A=document.getElementById('A')
+    var S=document.getElementById('S')
+    var D=document.getElementById('D')
+    var F=document.getElementById('F')
+    var G=document.getElementById('G')
+    var J=document.getElementById('J')
+    var K=document.getElementById('K')
+    var L=document.getElementById('L')
+
+   
+    
+    document.body.addEventListener('keyup',function(e){
+        if(e.keyCode==81){
+        Qaudio.play();
+        Q.classList.add('small');
+        Q.classList.remove('big');
+      }
+     else if(e.keyCode==87){
+        Waudio.play();
+        W.classList.add('small');
+        W.classList.remove('big');
+      }
+      else if(e.keyCode==69){
+        Eaudio.play();
+        E.classList.add('small');
+        E.classList.remove('big');
+      }
+      else if(e.keyCode==84){
+        Taudio.play();
+        T.classList.add('small');
+        T.classList.remove('big');
+      }
+      else if(e.keyCode===65){
+        Aaudio.play();
+        A.classList.add('small');
+        A.classList.remove('big');
+      }
+      else if(e.keyCode==83){
+        Saudio.play();
+        S.classList.add('small');
+        S.classList.remove('big');
+        
+      }
+      else if(e.keyCode==68){
+        Daudio.play();
+        D.classList.add('small');
+        D.classList.remove('big');
+      }
+      else if(e.keyCode==70){
+        Faudio.play();
+        F.classList.add('small');
+        F.classList.remove('big');
+      }
+      else if(e.keyCode==71){
+        Gaudio.play();
+        G.classList.add('small');
+        G.classList.remove('big');
+      }
+      else if(e.keyCode==74){
+        Jaudio.play();
+        J.classList.add('small');
+        J.classList.remove('big');
+      }
+      else if(e.keyCode==75){
+        Kaudio.play();
+        K.classList.add('small');
+        K.classList.remove('big');
+      }
+      else if(e.keyCode==76){
+        Laudio.play();
+        L.classList.add('small');
+        L.classList.remove('big');
+      }
+        
+    });
+    
+    //Adding function 
+    document.body.addEventListener('keydown',function(e){
+      
+      
+      if(e.keyCode==81){
+        Qaudio.play();
+        Q.classList.add('big');
+        Q.classList.remove('small');
+      }
+     else if(e.keyCode==87){
+        Waudio.play();
+        W.classList.add('big');
+        W.classList.remove('small');
+      }
+      else if(e.keyCode==69){
+        Eaudio.play();
+        E.classList.add('big');
+        E.classList.remove('small');
+      }
+      else if(e.keyCode==84){
+        Taudio.play();
+        T.classList.add('big');
+        T.classList.remove('small');
+      }
+      else if(e.keyCode===65){
+        Aaudio.play();
+        A.classList.add('big');
+        A.classList.remove('small');
+      }
+      else if(e.keyCode==83){
+        Saudio.play();
+        S.classList.add('big');
+        S.classList.remove('small');
+        
+      }
+      else if(e.keyCode==68){
+        Daudio.play();
+        D.classList.add('big');
+        D.classList.remove('small');
+      }
+      else if(e.keyCode==70){
+        Faudio.play();
+        F.classList.add('big');
+        F.classList.remove('small');
+      }
+      else if(e.keyCode==71){
+        Gaudio.play();
+        G.classList.add('big');
+        G.classList.remove('small');
+      }
+      else if(e.keyCode==74){
+        Jaudio.play();
+        J.classList.add('big');
+        J.classList.remove('small');
+      }
+      else if(e.keyCode==75){
+        Kaudio.play();
+        K.classList.add('big');
+        K.classList.remove('small');
+      }
+      else if(e.keyCode==76){
+        Laudio.play();
+        L.classList.add('big');
+        L.classList.remove('small');
+      }
+        
+     });
+     
+    
+    </script>
+    
+</body>
+</html>

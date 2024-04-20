@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+h1,h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400px;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.context-flex-space{
+    display: flex;
+   
+
+}
+.navlinks{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 15px 40px;
+    background: green;
+    font-weight: bold;
+    color: white;
+
+}
+.secondary-btn{
+    padding: 15px 40px;
+    background:none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    
+/*--------------Header---------------*/
+.navlinks{
+   
+    height: 10vh;
+    line-height: 10vh;
+    padding: 0 20px;
+}
+.navlinks img{
+    margin: 20px 0;
+}
+.navlinks ul{
+    display: inline-block;
+}
+.navlinks ul li{
+    display: inline-block;
+    text-overflow: uppercase;
+
+}
+.navlinks ul li a{
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s;
+
+}
+.navlinks ul li a:hover{
+    color: #7fc142;
+}
+.navlinks i{
+    margin: 0 20px;
+}
+
+.navlinks span{
+    display: none;
+
+}
+@media only screen and (max-width:768px){
+    .navlinks ul{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #009f7f;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+        z-index: 9;
+
+    }
+    
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks li a{
+        color: white;
+    }
+    .navlinks span{
+        color: black;
+        display: block;
+        cursor: pointer;
+        line-height: 10vh;
+        font-size: 25px;
+
+    }
+
+}
+.content{
+    height: 500px;
+}
+/*------------------home---------*/
+.home{
+    height: 100vh;
+    color: #fff;
+}
+.home img{
+    width: 100%;
+    height:100vh;
+}
+.home .text{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+
+}
+.home .text h1{
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+
+}
+.home p{
+    margin: 20px 0;
+}
+.home button{
+    margin-right: 20px;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next
+{
+position: absolute;
+top :40%;
+height:50px;
+width: 50px;
+background: rgba(0, 0, 0, 0,0.5)!important;
+color: #34373a;
+
+}
+.owl-nav .owl-prev{
+    left: 0;
+}
+.owl-nav .owl-next{
+    right: 0;
+}
+
+/*-----------------book---------------*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:20px ;
+
+}
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+}
+.book{
+    padding: 40px 0;
+    background: rgb(41, 53, 68);
+    color: #fff;
+
+}
+.book h1{
+    font-family: sans-serif;
+    font-size: 28px;
+
+}
+h1{
+    font-family: serif;
+}
+.book h1 span{
+    color: green;
+}
+.book input{
+    padding: 20px;
+}
+.book input:nth-last-child(1){
+    background: green;
+    color: #fff;
+    font-style: bold;
+    text-align: center;
+}
+/*-----------about-----------*/
+.left, .right{
+    width: 60%;
+    padding: 30px;
+  
+}
+.about.top{
+    display: flex;
+    justify-content: flex-end;
+}
+.about.top .container.flex{
+    display: flex;
+}
+.about.top .right{
+    flex: 1;
+}
+.top{
+    margin-top: 80px;
+}
+.mtop{
+    margin-top: 40px;
+}
+.heading h1{
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -30px;
+}
+.heading h2{
+    margin: 30px 0;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: 400;
+
+}
+.about .heading h1{
+    top:55px;
+
+}
+.about{
+    position: relative;
+}
+.about .left{
+    margin-top:15px ;
+}
+.about.top .left {
+    /* Adjust margin to create space between left and right content */
+    margin-right: 100px; /* Adjust the margin as needed */
+    
+}
+.about button{
+    margin: 30px 0;
+}
+.container-flex{
+   float: left;
+}
+
+
+
+/*-----------------Counter-----------------*/
+.counter.top{
+    background-image: url("Images/Image-counter-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    color: #fff;
+    
+}
+.counter .grid{
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    place-items: center;
+    padding-top: 60px;
+
+}
+.counter h1{
+    font-size: 50px;
+
+}
+.counter hr{
+    width: 50%;
+    margin: 10px auto;
+    background: #7fc142;
+    height: 2px;
+    border: none;
+}
+/*------------rooms------------------*/
+.rooms{
+    position: relative;
+
+}
+.rooms .text{
+    border:  1px solid rgb(197, 190, 190);
+    border-top: none;
+    padding: 30px;
+}
+.rooms i{
+    font-size: 12px;
+    color: #fbb234;
+    margin: 15px 0;
+    margin-right: 5px;
+
+}
+.rooms p{
+    margin: 20px 0;
+    opacity: 0.7;
+}
+.rooms h3{
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 400;
+    color: #7fc142;
+    float: inline-end;
+}
+.rooms h3 span{
+    font-size:  15px;
+    font-weight: 400;
+    color: #000;
+    
+
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next
+{
+position: absolute;
+top :-20%;
+height:50px;
+width: 50px;
+background: #7fc142 !important;
+color: #34373a;
+
+}
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i{
+    color: #fff;
+}
+.owl-nav .owl-prev{
+    left: 90%;
+}
+.owl-nav .owl-next{
+    right: 0;
+}
+/*--------------gallary------------*/
+.gallery{
+    position: relative;
+    height: 300px;
+
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+.gallery .img{
+    position: relative;
+}
+.gallery .img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(126, 193, 65, 0.86);
+    width: 255px;
+    height: 251px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.overlay{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    z-index: 3;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    transition: 0.5s;
+}
+.gallery span{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius:50%;
+    text-align: center;
+    border: 2px solid white;
+
+}
+
+.overlay h3{
+    margin-top: 20px;
+    font-weight: 500;
+
+}
+.gallery .items:hover .overlay,
+.gallery .items:hover .img::after{
+    opacity: 1;
+    cursor: pointer;
+}
+.gallery .owl-nav .owl-prev{
+    left: 85%;
+
+}
+.gallery .owl-nav .owl-next{
+    right: 5%;
+    
+}
+.gallery .owl-nav .owl-next,
+.gallery .owl-nav .owl-prev{
+    top: -40%;
+
+    
+}
+.content .mtop{
+    height: 300px;
+}
+/*--------------services----------------*/
+.services {
+    position: relative;
+}
+
+
+.grid2 {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+
+.services .left {
+    padding: 20px 0;
+}
+.services .box {
+    height: 140px; 
+    width: 120px;
+    border: 1px solid rgb(205, 197, 197);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.services .box .text {
+    padding: 20px 0; 
+}
+
+
+.services i {
+    font-size: 40px;
+    color: #7fc142;
+    transition: transform 0.3s ease;
+}
+
+.services h3 {
+    font-size: 18px; 
+    font-weight: 400;
+    margin-top: 15px; 
+    transition: color 0.3s ease;
+}
+
+.services .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for the icon and heading */
+.services .box:hover i, .services .box:hover h3 {
+    color: #4CAF50;
+}
+.content .flex_space{
+    width: 500px;
+}
+.services img{
+    width: 100%;
+    height: 100%;
+}
+.services .box:hover{
+    background: #7fc142;
+    color: #fff;
+    cursor: pointer;
+}
+.services .box:hover i
+.services .box:hover h3{
+ color: #fff;
+}
+/*------------Customer section-------------*/
+.Customer{
+    background-image: url("Images/Image-counter-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.Customer .container{
+    max-width: 70%;
+
+
+}
+.Customer .item{
+    padding: 10% 0;
+
+}
+
+.Customer i{
+   width: 100px;
+   height: 100px;
+   background: rgba(126,193,64,0.75);
+   line-height: 100px;
+   border-radius: 50%;
+   font-size: 50px;
+   margin-bottom: 50px;
+}
+.Customer p{
+    line-height: 30px;
+}
+.Customer h3{
+    margin-top: 20px;
+    color: #7fc142;
+} 
+.owl-carousel2 .owl-dots{
+    position: absolute;
+    bottom: 70px;
+    left: 46.6%;
+}
+.owl-carousel2 .owl-dots i{
+    color: #7fc142;
+}
+.owl-carousel2 .owl-dots i:hover button{
+    color: #7fc142;
+}
+.owl-carousel2 span{
+    border: 2px solid #fff;
+    background: transparent !important;
+
+}
+.owl-carousel2 .active span{
+    background: #7fc142 !important;
+    border:  2px solid #fff;
+
+}
+/*-------------footer-----------*/
+footer{
+    background: #282834;
+    color: #b6b6b6;
+    padding: 10% 0 5% 0;
+
+}
+footer .grid{
+    grid-template-columns: repeat 6fr 3fr 3fr;
+
+
+}
+footer p{
+    color: #b6b6b6;
+    font-size:15px ;
+    line-height: 25px;
+}
+footer .icon i{
+    margin: 20px 20px 20px 0;
+    color: #b6b6b6;
+
+}
+footer h2{
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+footer li{
+    margin-bottom: 20px;
+}
+footer i{
+    color: #7fc142;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+footer label{
+    margin: 20px 0;
+}
+.legal{
+    padding: 15px;
+    background: #282834;
+    color: #b6b6b6;
+    border-top: 1px solid black;
+}
